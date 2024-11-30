@@ -1,7 +1,5 @@
 ##### Question :
-   Make a program that calculates the Body Mass Index (BMI) of a person and determine weather the person is
-  in normal weight, under weight or over weight. BMI is calculated as (BMI = w/h*h). Make the program to
-  work for multiple person before terminated.
+   Make a program that calculates the Body Mass Index (BMI) of a person and determine weather the person is in normal weight, under weight or over weight. BMI is calculated as (BMI = w/h*h). Make the program to work for multiple person before terminated.
 ##### Problem analysis :
 
 ### 1.1Input:
@@ -13,7 +11,8 @@ BMI of the person
  
 ### 1.3 process:
 -	Taking the height and weight from the input to calculate 
-```	BMI=Weight/Height*Height.```
+```	BMI=Weight/Height*Height.
+```
 -	If the person has BMI of less than or equal to 18 the person is underweight 
 -	If the person has BMI from 18 to 24 the person is under normal weight
 -	If the person has BMI of 24 and above then the person is over weight (obese)

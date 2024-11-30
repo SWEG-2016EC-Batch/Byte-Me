@@ -6,7 +6,7 @@
 
 ### 1.1Input:
 -Height of the person
--Wight of the person
+-Wieght of the person
 
 ### 1.2 Output:
 BMI of the person 

@@ -1,3 +1,4 @@
+
 Input:
 Height of the person
 Wight of the person

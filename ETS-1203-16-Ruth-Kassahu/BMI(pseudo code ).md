@@ -31,4 +31,4 @@ After this process to make this easy to code and compile let me write the pseudo
 -Step 8:else print you have finished calculating 
 -Step 9: stop
 
-#####1.5 Flow chart
+##### 1.5 Flow chart

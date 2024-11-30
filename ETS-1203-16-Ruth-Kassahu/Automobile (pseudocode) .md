@@ -15,12 +15,12 @@ So breaking down the problem that has been given into:
 
 After this process to make this easy to code and compile let me write the pseudocode (false code)
 ##### 1.4 pseudocode:
-Step 1:Start 
-Step 2: Enter the capacity of the fuel tank in gallons you want to calculate the total miles left 
-Step 3:Enter the miles per gallon the automobile can achieve 
-Step 4: Total Miles=Fuel Tank Capacity in gallons ×Miles Per Gallon
-Step 5:Total Miles
-Step 6: stop
+- Step 1:Start 
+- Step 2: Enter the capacity of the fuel tank in gallons you want to calculate the total miles left 
+- Step 3:Enter the miles per gallon the automobile can achieve 
+- Step 4: Total Miles=Fuel Tank Capacity in gallons ×Miles Per Gallon
+- Step 5:Total Miles
+- Step 6: stop
 
 
 

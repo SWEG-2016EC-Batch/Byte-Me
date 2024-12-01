@@ -55,4 +55,4 @@ Step 7.2: Else
 Step 8: Stop
 
 ##### Flow Chart
-[BMI](./BMI.drawio%20(1).png)
+![BMI](./BMI.drawio%20(1).png)

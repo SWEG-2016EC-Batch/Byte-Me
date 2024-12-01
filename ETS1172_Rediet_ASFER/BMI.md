@@ -1,55 +1,54 @@
-# BMI Calculator
+**Problem analysis**
 
-## Problem Analysis
+**Input:-** weight(kg) and height(meter(M)).
 
-### Input:
-- Weight (kg)
-- Height (m)
+**Output:-** calculate BMI and categorize it as under weight,normal,over weight,obese .
 
-### Output:
-- Calculate BMI (Body Mass Index)
-- Categorize the BMI into:
-  - Underweight
-  - Normal
-  - Overweight
+**Operation:-**
 
-### Operation:
-1. Print an input prompt message and read the corresponding input data.
-2. Calculate BMI:
-   \[
-   BMI = weight/(height^2)
-   \]
-3. Print the output message and process the result:
-   - If BMI < 18.5, display "Underweight"
-   - If 18.5 ≤ BMI < 25, display "Normal"
-   - If 25 ≤ BMI < 30, display "Overweight"
-4. Ask the user if they want to calculate another BMI:
-   - If yes, repeat the process from step 2.
-   - If no, end the process.
+✓ Print input prompt message and read corresponding input data.
 
----
+✓ Calculate BMI
 
-## Pseudo Code for BMI Calculator
+- BMI=weight/(height\*height)
 
-### Step 1: Start
+✓ Print output prompt message and process result (Net salary)
 
-### Step 2: Input weight (kg) and height (m)
+Checking
 
-### Step 3: Calculate BMI using the formula:
-\[
-\text{BMI} = \frac{\text{weight}}{\text{height}^2}
-\]
+- if BMI<18.5 then display “underweight”.
+- if BMI>=18.5 and BMI<25 ,then display “normal”.
+- if BMI>=25 and BMI<30,then display “over weight”.
 
-### Step 4: Display calculated BMI
+**Pseudo code for BMI calculator**
 
-### Step 5: Categorize the BMI:
-- If BMI < 18.5, display "Underweight"
-- If 18.5 ≤ BMI < 25, display "Normal"
-- If 25 ≤ BMI < 30, display "Overweight"
+**Step1:-** start.
 
-### Step 6: Ask if the user wants to calculate another BMI:
-- If yes, repeat the process from Step 2.
-- If no, end the process.
+**Step2:-** input weight(kg) and height(M) respectively.
+
+**Step3:-** calculate BMI as BMI=weight/(height\*height).
+
+**Step4:-** prompt calculated BMI.
+
+**Step5:-** check
+
+**5.1**if BMI<18.5 then display “underweight”.
+
+**5.2** if BMI>=18.5 and BMI<25 ,then display “normal”.
+
+**5.3** if BMI>=25 ,then display “over weight”.
+
+**Step6:-** Ask the user if they want to calculate another BMI.
+
+**6.1** if yes,repeat the process from step2.
+
+**6.2** if no ,end the process.
+
+end
+
+If BMI>=25
+
+no
 
 
 

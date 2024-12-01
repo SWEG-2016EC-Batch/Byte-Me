@@ -37,7 +37,7 @@ We use while loop to iterate the process
 
 **Step4:-** prompt calculated net salary’
 
-**Step5:-**Ask the user if they want to calculate another BMI.
+**Step5:-** Ask the user if they want to calculate another BMI.
 
 **5.1** if yes,repeat the process from step2.
 

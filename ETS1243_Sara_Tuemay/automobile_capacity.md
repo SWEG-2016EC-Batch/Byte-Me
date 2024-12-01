@@ -38,4 +38,4 @@ Step 7: Print total miles driven
 Step 8: Stop
 
 ### Flow Chart
-![Automobile Capacity](./automobile.png)
+![Automobile Capacity](./automobile_capacity.png)

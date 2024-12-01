@@ -76,4 +76,4 @@ Step 10: Stop
 
 ### Flow Chart
 
-![Transmission time](./transmission_line.png)
+![Transmission time](./Transmission_line.png)

@@ -17,7 +17,7 @@
 1. Print an input prompt message and read the corresponding input data.
 2. Calculate BMI:
    \[
-   BMI = weight/((height)^2)
+   BMI = weight/(height^2)
    \]
 3. Print the output message and process the result:
    - If BMI < 18.5, display "Underweight"

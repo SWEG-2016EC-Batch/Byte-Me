@@ -20,14 +20,14 @@ BMI of the person
 After this process to make this easy to code and compile let me write the pseudocode (false code)
 
 #####  pseudocode:
--Step 1:start 
--Step 2: enter the height of the person that you want to calculate the BMI of
--Step 3:enter the weight of the person that you want to calculate the BMI of
--Step 4:BMI← Weight/(Height*Height)
--Step 5:print BMI
--Step 6:Enter 0 if you want to terminate other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
--Step 7:If the numbered entered is different from zero go to step 2
--Step 8:else print you have finished calculating 
--Step 9: stop
+-  Step 1:start 
+-  Step 2: enter the height of the person that you want to calculate the BMI of
+-  Step 3:enter the weight of the person that you want to calculate the BMI of
+-  Step 4:BMI← Weight/(Height*Height)
+-  Step 5:print BMI
+-  Step 6:Enter 0 if you want to terminate other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
+-  Step 7:If the numbered entered is different from zero go to step 2
+-  Step 8:else print you have finished calculating 
+-  Step 9: stop
 
 ##### 1.5 Flow chart

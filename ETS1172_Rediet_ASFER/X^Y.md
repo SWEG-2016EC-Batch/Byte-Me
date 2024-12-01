@@ -13,11 +13,11 @@
 result\*= X,until it exceed up to Y.
 
 - Check
-- if Y=0, X^y=1
-- if y>0 **,**result\*= X,until it exceed up to Y.
-- if y,0 ,result=1 /(result\*= X),untill it exceed up to Y.
-- result\*= X,untill it exceed up to Y.
-- Print output prompt message and process result (X^Y)
+   if Y=0, X^y=1
+   if y>0 **,**result\*= X,until it exceed up to Y.
+   if y,0 ,result=1 /(result\*= X),untill it exceed up to Y.
+  
+   Print output prompt message and process result (X^Y)
 
 **Pseudo code for BMI calculator**
 

@@ -54,5 +54,5 @@ Step 9: Check if base != 0
 Step 10: Stop
 
 ### Flow Chart
-![Power](./Power.png)
+![Power](./power.png)
 

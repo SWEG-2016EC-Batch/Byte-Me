@@ -1,3 +1,15 @@
+Problem analysis Tank Capacity and Range Calculation Program
+
+The program calculates how far a vehicle can travel based on its fuel tank capacity and miles-per-gallon (mpg) efficiency. It includes input validation and allows the user to continue using the program after each calculation.
+
+Key points:
+
+Input Validation: Ensuring the user enters valid values for tank capacity and mpg (both should be positive).
+Range Calculation: The program multiplies tank capacity by mpg to calculate the range the vehicle can travel.
+Flow Control: The use of the goto statement here is not ideal, as it can make the program harder to understand and maintain.
+Retry Mechanism: The program allows the user multiple chances to enter valid input (3 attempts), ensuring flexibility.
+
+
 # Pseudocode for Tank Capacity and Range Calculation Program
 
 **Start**

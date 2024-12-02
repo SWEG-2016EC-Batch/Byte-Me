@@ -3,7 +3,6 @@
 //tax: 15%).
 
 #include <iostream>
-#include <string>
 using namespace std;
 int main() {
 
@@ -29,12 +28,9 @@ cin>>bonus_rate;
 cout<<"Enter base salary: ";
 cin>>base_salary;
 
-
-
-
 gross_salary=base_salary + (bonus_rate*working_hours);
 
-pension_payment = base_salary * 0.05;
+pension_payment = gross_salary * 0.05;
 
 tax = gross_salary * 0.15;
 
@@ -50,13 +46,6 @@ cout << "\nEmployee Name: " << employee_name << endl;
     cout << "Net Salary: " << net_salary << endl;
 
     return 0;
-
-
-
-
-
-
-
 
 }
 

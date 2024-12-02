@@ -23,7 +23,7 @@ int main()
    if(BMI<=18.5) {
     cout<<"YOU ARE UNDER WEIGHT!!"<<endl;
    }
-   else if(BMI>=18.5 && BMI<=24.9) {
+   else if(BMI>18.5 && BMI<=24.9) {
     cout<<"CONGRATULATIONS! YOU ARE NORMAL."<<endl;
    }
    else if(BMI>=25 && BMI<=29.9)
@@ -32,7 +32,7 @@ int main()
 }
 
 else  {
-cout<<"You are obese!!"<<endl; }
+cout<<"YOU ARE OBESE!!"<<endl; }
 
 cout<<"IF YOU WANT TO CONTINUE PRESS ANY NUMBER, IF NOT PRESS 0.";
 cin>>continue_1;

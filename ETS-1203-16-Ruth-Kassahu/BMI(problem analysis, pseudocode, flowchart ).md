@@ -24,12 +24,15 @@ After this process to make this easy to code and compile let me write the pseudo
 -  Step 2: enter the height of the person that you want to calculate the BMI of
 -  Step 3:enter the weight of the person that you want to calculate the BMI of
 -  Step 4:BMI← Weight/(Height*Height)
--  Step 5:print BMI
--  Step 6:Enter 0 if you want to terminate other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
--  Step 7:If the numbered entered is different from zero go to step 2
--  Step 8:else print you have finished calculating 
--  Step 9: stop
+-  step 5 :If BMI is greater or equal to 24,c="You are over weight"
+-  step 6:If BMI is less than or eqaul to 18,c="You are under weight "
+-  step 7:Else c="You are have normal BMI" 
+-  Step 8:print BMI and 'c'
+-  Step 9:Enter 0 if you want to terminate other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
+-  Step 10:If the numbered entered is different from zero go to step 2
+-  Step 11:else print you have finished calculating 
+-  Step 12: stop
 
 ##### 1.5 Flow chart
 
-![BMI](./Bmi1.png)
+

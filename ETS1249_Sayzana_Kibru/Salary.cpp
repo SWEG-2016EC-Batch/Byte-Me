@@ -3,10 +3,12 @@ using namespace std;
 
 int main() {
    
+    string name;
     const double Tax_Rate = 0.15,  Pension_Rate = 0.05;
     double weekly_working_hours, base_salary, bonus_rate;
     double gross_salary, net_salary, bonus_payment;
-
+    cout << "Enter the name of employee: ";
+    getline(cin, name);
     
     cout << "Enter weekly working hours: ";
     cin >> weekly_working_hours;
@@ -22,8 +24,8 @@ int main() {
     gross_salary = base_salary + bonus_payment;
     net_salary = gross_salary - (gross_salary * Tax_Rate) - (base_salary * Pension_Rate);
 
-  
-    cout << "\n Gross Salary: " << gross_salary << " Birr\n";
+    cout << name <<"'s:\n";
+    cout << "\nGross Salary: " << gross_salary << " Birr\n";
     cout << "Bonus Payment: " << bonus_payment << " Birr\n";
     cout << "Net Salary: " << net_salary << " Birr\n";
 

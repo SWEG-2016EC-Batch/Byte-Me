@@ -1,4 +1,4 @@
-```mermiad
+```mermaid
 graph TD
     A[Start] --> B[Input tank capacity]
     B --> C[Input miles per gallon]

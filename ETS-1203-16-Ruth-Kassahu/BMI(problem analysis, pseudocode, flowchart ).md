@@ -31,3 +31,5 @@ After this process to make this easy to code and compile let me write the pseudo
 -  Step 9: stop
 
 ##### 1.5 Flow chart
+
+![BMI](./Bmi1.png)

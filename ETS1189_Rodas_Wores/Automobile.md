@@ -17,6 +17,5 @@ Displays the total number of miles that the automobile can travel without needin
 - Step 2:Enter the capacity of the fuel tank in gallons 
 - Step 3:Enter the miles per gallon the automobile can achieve
 - Step 4:Total Miles= Fuel Tank Capacity in gallons × Miles Per Gallon
-- Step 5:Total Miles
-- step 6:If total miles less or equale to 35 then display you should refuel your car soon else display you have good miles  ahead.
-- Step 7: stop
+- Step 5:Print total Miles
+- Step 6: stop

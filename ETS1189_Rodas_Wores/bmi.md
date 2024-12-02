@@ -26,11 +26,15 @@
 - Step 2: enter your height
 - Step 3:enter your weight
 - Step 4:BMI← Weight/(Height*Height)
-- Step 5:print BMI
-- Step 6:Enter 0 if you want to terminate, other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
-- Step 7:If the numbered entered is different from zero go to step 2
-- Step 8:else print you have finished calculating
-- Step 9: stop
+- step 5:If BMI is greater or equal to 25 and less or equal to 29.9 ,c="YOU ARE OVER WEIGHT!!"
+- step 6:If BMI is less than or eqaul to 18.5,c="YOU ARE UNDER WEIGHT!! "
+- step 7: If BMI is greater than 18.5 and less or equal to 24.9, c= "CONGRATULATIONS! YOU ARE NORMAL."
+- step 8:Else c="YOU ARE OBESE!"
+- Step 9:print BMI and 'c'
+- Step 10:Enter 0 if you want to terminate, other number if you want to continue and add another person’s height and weight /*Ask if the person wants to enter anothers person height and weight to calculate BMI of another person */
+- Step 11:If the numbered entered is different from zero go to step 2
+- Step 12:else print you have finished calculating
+- Step 13: stop
 
 
 

@@ -23,4 +23,4 @@ After this process to make this easy to code and compile let me write the pseudo
 - Step 6: stop
 
 
-![BMI](./Bmi 1.png)
+

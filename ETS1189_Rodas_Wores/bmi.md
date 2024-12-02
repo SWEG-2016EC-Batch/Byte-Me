@@ -31,3 +31,8 @@
 - Step 7:If the numbered entered is different from zero go to step 2
 - Step 8:else print you have finished calculating
 - Step 9: stop
+
+
+
+
+

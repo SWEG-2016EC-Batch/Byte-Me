@@ -22,12 +22,5 @@ int main() {
     cout << "The automobile can be driven " << totalmiles
          << " miles without refueling." << endl;
 
-  if (totalmiles <= 35){
-      cout<<"WARNING !! YOU SHOULD REFUEL YOUR CAR SOON !!\n";
-  }
-  else {
-      cout<<"You have good miles ahead ";
-  }
-
    return 0;
 }

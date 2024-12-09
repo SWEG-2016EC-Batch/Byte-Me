@@ -18,18 +18,18 @@ So breaking down the problem that has been given into :
 - Net Salary Calculation: Subtract the pension and tax from the gross salary to get the net salary.
  After this process to make this easy to code and compile let me write the pseudocode (false code)
 ##### 1.4	pseudocode:
-step 1:Start.
-Step 2:Enter Employee's name ,Weekly working hours ,Bonus rate per hour ,Base salary .
-Step 3:Calculate Bonus Payment with calculation
+- step 1:Start.
+- Step 2:Enter Employee's name ,Weekly working hours ,Bonus rate per hour ,Base salary .
+- Step 3:Calculate Bonus Payment with calculation
 -	BonusPayment=HoursWorked*BonusRate
-Step 4:Calculate Gross Salary:with calculation
-GrossSalary=BaseSalary+BonusPayment
-Step 5:Calculate Deductions(which is pension and Tax)
+- Step 4:Calculate Gross Salary:with calculation
+- GrossSalary=BaseSalary+BonusPayment
+- Step 5:Calculate Deductions(which is pension and Tax)
 -	Pension: Pension=GrossSalary×0.05
 - Tax: Tax=GrossSalary×0.15
-Step 6: Calculate Net Salary:
-NetSalary=GrossSalary−(Pension+Tax)
-Step 7:Display the employee's name along with GrossSalary, BonusPayment, Pension, Tax, and NetSalary.
-Step 8: stop
+- Step 6: Calculate Net Salary:
+- NetSalary=GrossSalary−(Pension+Tax)
+- Step 7:Display the employee's name along with GrossSalary, BonusPayment, Pension, Tax, and NetSalary.
+- Step 8: stop
  
 

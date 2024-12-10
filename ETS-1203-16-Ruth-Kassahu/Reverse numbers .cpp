@@ -1,4 +1,4 @@
-// Online C++ compiler to run C++ program online
+// Prints the reverses of the number (e.g. input = 4637215 Output=5217364).
 #include <iostream>
 using namespace std;
 int main() {

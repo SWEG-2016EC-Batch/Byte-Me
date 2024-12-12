@@ -14,6 +14,7 @@
   #### Pseudo code
 
   Step 1: Start
+  
   Step 2: Read height in meter
   ```
   Step 2.1: check if input fails or height < 0

@@ -39,7 +39,7 @@ The program calculates the grade of a student based on their performance in vari
    flowchart TD
     Start[Start] --> InputDetails[Input Student Details]
     InputDetails --> CourseCount[Enter Number of Courses]
-    CourseCount -->|Validate Size| Validation[Is Size Valid?]
+    CourseCount -->|Validate Size| Validation{Is Size Valid?}
     Validation -->|No| Error[Display Error and Retry]
     Validation -->|Yes| CourseLoop[For Each Course]
     CourseLoop --> InputCourseName[Input Course Name]

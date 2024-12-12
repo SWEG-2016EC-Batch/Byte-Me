@@ -39,7 +39,7 @@ The program takes an integer as input and offers the user a variety of operation
 ```mermaid
   flowchart TD
     Start[Start] --> InputNumber[Enter Number]
-    InputNumber --> ChooseOperation[Choose Operation (1-8)]
+    InputNumber --> ChooseOperation[Choose Operation 1-8]
     ChooseOperation --> ReverseNumber[Reverse Number]
     ChooseOperation --> CountDigits[Count Digits]
     ChooseOperation --> ProductEvenDigits[Product of Even Digits]

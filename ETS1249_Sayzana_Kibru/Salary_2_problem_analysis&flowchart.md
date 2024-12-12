@@ -36,7 +36,7 @@ The program calculates the net salary of an employee based on their basic salary
 ```mermaid
 flowchart TD
     Start[Start] --> InputDetails[Input Employee Details]
-    InputDetails -->|Validate Inputs| Validation[Are Inputs Valid?]
+    InputDetails -->|Validate Inputs| Validation{Are Inputs Valid?}
     Validation -->|No| Error[Display Error and Retry]
     Validation -->|Yes| TaxRate[Determine Tax Rate Based on Salary]
     TaxRate --> OvertimeCheck[Worked Hours > 40?]

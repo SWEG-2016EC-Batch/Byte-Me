@@ -23,26 +23,26 @@ Operation
 - Nested loops are used to generate the patterns.
 
 Pseudo Code
-Step 1: Start
+- Step 1: Start
 
-Step 2: Read rows and columns
+- Step 2: Read rows and columns
 
 Pattern 1: Grid of Numbers
 
-Step 3: For i from 1 to row: // start outer loop
-   Step 3.1: For j from 1 to column: // start inner loop
-           print j
-           End inner for loop 
-    Print a newline
-    End outer for loop
+- Step 3: For i from 1 to row: // start outer loop
+  -  Step 3.1: For j from 1 to column: // start inner loop
+         -   print j
+          -  End inner for loop 
+   - Print a newline
+   - End outer for loop
 
 Pattern 2: Characters
 
-Step 4: For each character from 'A' to 'X':
-        Print the character
-   Step 4.1: If the character is 'F', 'L', or 'R':
-        Print a newline
-        End for loop
+- Step 4: For each character from 'A' to 'X':
+       - Print the character
+  - Step 4.1: If the character is 'F', 'L', or 'R':
+        . Print a newline
+       . End for loop
 
 Pattern 3: Right-Angled Triangle of Numbers
 

@@ -38,9 +38,9 @@
 - 5.	If digit is even:
 - 6.	Multiply digit with product.
 - 7.	.Set has Even to true
-- 8.	 Remove the last digit from number
+- 8.	Remove the last digit from number
 - 9.	If  has Even is false:
-- 10.	  Print 0.
+- 10.Print 0.
 - 11.	else.Print product
 - 12.	End
 #### 10.	If choice is 4: Print the first and last digit, and find their sum.

@@ -1,4 +1,147 @@
 
+#### Problem Analysis
+
+##### 1. Input
+   - An integer number from the user.
+   - User's choice from the menu to select the desired operation.
+
+##### 2. Output
+   - Reversed number.
+   - Count of digits in the number.
+   - Product of even digits.
+   - Sum of the first and last digit.
+   - Number with swapped first and last digit.
+   - Palindrome check result.
+   - Frequency of each digit in the number.
+   - Strong number check result.
+   - Perfect number check result.
+
+##### 3. Operations for Each Task
+ ##### a) Prints the Reversed Number
+- Input 
+  - An integer `number`.
+
+- Output
+  - The reversed number.
+- Operation:
+         -  1. Initialize `reversed` to 0.
+         -  2. While `number` is not 0:
+                  - Extract the last digit.
+                  - Append the digit to `reversed`.
+                  - Remove the last digit from `number`.
+            - 3. Print `reversed`.
+
+##### b) Counts the Number of Digits
+- Input: 
+  - An integer `number`.
+- Output:
+  - The count of digits.
+- Operation:
+          1. Initialize `count` to 0.
+          2. While `number` is not 0:
+                     - Remove the last digit.
+                     - Increment `count`.
+  3. Print `count`.
+
+##### c) Find the Product of Even Digits
+- Input: 
+  - An integer `number`.
+- Output
+  - The product of even digits.
+- Operation:
+           -  1. Initialize `product` to 1.
+            - 2. Initialize `has Even` to false.
+            - 3. While `number` is not 0:
+                          - Extract the last digit.
+                          - If the digit is even:
+                          - Multiply the digit with `product`.
+                           - Set `has Even` to true.
+                          - Remove the last digit from `number`.
+            -  4. If `has Even` is false:
+                          - Print 0.
+            -  5. Else:
+                          - Print `product`.
+
+
+##### d) Prints the First and Last Digit and Find Their Sum
+- Input: 
+         - An integer `number`.
+- Output
+        - The first digit, the last digit, and their sum.
+- Operation:
+                  -1. Extract the last digit and store in `last Digit`.
+          -2. While `number` is greater than or equal to 10:
+                            - Remove the last digit.
+                  - 3. Store `number` in `first Digit`.
+                  - 4. Calculate `sum` as `first Digit + last Digit`.
+       - 5. Print `first Digit`, `last Digit`, and `sum`.
+
+##### e) Swap the First and Last Digit
+- Input 
+        - An integer `number`.
+- Output 
+         - The number with the first and last digits swapped.
+- Operation
+                - 1. Extract the last digit and store in `last Digit`.
+                - 2. While `number` is greater than or equal to 10:
+                         - Remove the last digit.
+                - 3. Store `number` in first   Digit.
+                - 4. Calculate `new  Number` as `last Digit * 10^(numDigits-1) + middle Part * 10 + first Digit`.
+-  5. Print `newNumber`.
+
+##### g) Check Whether the Number is a Palindrome
+- Input 
+      - An integer `number`.
+- Output
+     - Boolean result indicating if the number is a palindrome.
+
+- Operation:
+         -  1. Check if `number` equals `reverseNumber(number)`.
+         -  2. Print the result.
+
+##### h) Find the Frequency of Each Digit in a Given Integer and Print in Table Format
+- Input
+      - An integer `number`.
+- Output
+     - The frequency of each digit in the number.
+- Operation
+          -   1. Initialize an array `freq` of size 10 with all elements as 0.
+          -   2. While `number` is not 0:
+                  - Extract the last digit.
+                  - Increment the frequency of the digit in `freq`.
+                  - Remove the last digit from `number`.
+           -  3. Print the frequency of each digit.
+
+#####  i) Check if a Number is Strong or Not
+- Input: 
+     - An integer `number`.
+- Output:
+     - Boolean result indicating if the number is a Strong number.
+- Operation
+            -  1. Initialize `sum` to 0.
+             - 2. Store the original `number` in `temp`.
+             - 3. While `temp` is not 0:
+                      - Extract the last digit.
+                      - Calculate the factorial of the digit and add to `sum`.
+                      - Remove the last digit from `temp`.
+             - 4. Check if `sum` equals `number`.
+ - 5. Print the result.
+
+ ##### j) Check if a Number is Perfect Number or Not
+- Input
+      - An integer `number`.
+- Output
+      - Boolean result indicating if the number is a Perfect number.
+- Operation
+               - 1. Initialize `sum` to 0.
+                - 2. For `i` from 1 to `number / 2`:
+     - If `number` is divisible by `i`:
+                     - Add `i` to `sum`.
+-  3. Check if `sum` equals `number`.
+               - 4. Print the result.
+
+
+
 ##### Pseudo Code
 #### 1.	Start
 #### 2.	Prompt the user to enter an integer.

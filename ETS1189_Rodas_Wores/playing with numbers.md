@@ -1,53 +1,55 @@
-Problem Analysis
-Input
-
-Number (num)
-Choice of operation
-Decision to continue or exit
-Output
-
-Result based on the chosen operation (e.g., reversed number, digit count, product of even digits, etc.)
-Operation
-
-Reverse a number
-While num is not zero:
-Get remainder: rem = num % 10
-Build reversed number.
-Update num.
-Count digits of a number
-While num is not zero:
-Increment digit count.
-Update num.
-Product of even digits
-While num is not zero:
-Get remainder.
-If even, multiply with product.
-Update num.
-First and last digit and their sum
-Get last digit.
-While num is not zero:
-Update first digit.
-Update num.
-Calculate sum of first and last digits.
-Swap first and last digit
-Count digits.
-Calculate new swapped number using first and last digits.
-Check if number is palindrome
-Build palindrome by reversing the number.
-Compare with original.
-Check if number is strong
-While num is greater than zero:
-Calculate factorial of each digit and sum.
-Compare with original.
-Check if number is perfect
-For each integer from 1 to num:
-Check divisibility and sum proper divisors.
-Compare with original.
-Frequency of first digit
-Count total digits.
-Determine first digit.
-Count occurrences of the first digit in the original number.
-Pseudo Code
+- Problem Analysis
+  
+- Input
+- Number (num)
+- Choice of operation
+- Decision to continue or exit
+ 
+- Output
+- Result based on the chosen operation (e.g., reversed number, digit count, product of even digits, etc.)
+  
+- Operation
+- Reverse a number
+- While num is not zero:
+- Get remainder: rem = num % 10
+- Build reversed number.
+- Update num.
+- Count digits of a number
+- While num is not zero:
+- Increment digit count.
+- Update num.
+- Product of even digits
+- While num is not zero:
+- Get remainder.
+- If even, multiply with product.
+- Update num.
+- First and last digit and their sum
+- Get last digit.
+- While num is not zero:
+- Update first digit.
+- Update num.
+- Calculate sum of first and last digits.
+- Swap first and last digit
+- Count digits.
+- Calculate new swapped number using first and last digits.
+- Check if number is palindrome
+- Build palindrome by reversing the number.
+- Compare with original.
+- Check if number is strong
+- While num is greater than zero:
+- Calculate factorial of each digit and sum.
+- Compare with original.
+- Check if number is perfect
+- For each integer from 1 to num:
+- Check divisibility and sum proper divisors.
+- Compare with original.
+- Frequency of first digit
+- Count total digits.
+- Determine first digit.
+- Count occurrences of the first digit in the original number.
+  
+- Pseudo Code
+  
 Step 1: Start
 
 Step 2: Declare variables

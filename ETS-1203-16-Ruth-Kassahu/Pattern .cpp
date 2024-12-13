@@ -2,7 +2,9 @@
 using namespace std;
 
 int main()
-{
+{ 
+    
+    cout << "Pattern 1: Grid of numbers\n\n" << endl;
     for(int i = 1; i <=5; i++){
         for(int j =1; j <=5; j++){
             cout << j << " ";
@@ -11,6 +13,7 @@ int main()
     }
 
     cout << "\n\n";
+    cout << "Pattern 2: Characters \n\n" << endl;
 
     for(char ch = 'A'; ch <= 'X'; ch++){
     
@@ -21,6 +24,7 @@ int main()
     }
 
     cout << "\n\n";
+    cout << "Pattern 3: Right-Angled triangle of numbers\n\n" << endl;
 
     for(int i = 1; i <=5; i++){
         for(int j = 1; j <=i ;j++){
@@ -31,16 +35,21 @@ int main()
 
     cout << "\n\n";
 
-for(int i = 1; i<= 5; i++){
+    cout << "Pattern 4: Inverted Right-angled triangle\n\n" << endl;
+
+ for (int i = 1; i<=5;i++){
     for(int j = i; j<=5; j++){
-        cout << " ";
+        cout << "  ";
     }
-    for(int j = 1; j <= i; j++){
-        cout  << j ;
+
+    for (int j = i; j>=1; j--){
+        cout << j << " ";
     }
-    cout << endl;
-}
+    cout <<  endl;
+ }
 cout << "\n\n";
+
+    cout << "Pattern 5: Pyramid of letters\n\n" << endl;
 
 for(char ch ='A'; ch <= 'E'; ch++){
     for(char c = 'A'; c <= ch; c++){
@@ -49,6 +58,9 @@ for(char ch ='A'; ch <= 'E'; ch++){
     cout << endl;
 }
 cout << "\n\n";
+
+    cout << "Pattern 6: LowerCase letters grid\n\n" << endl;
+
 for(char ch = 'a'; ch <= 'e'; ch++){
     for(char c = 'a'; c <= 'e'; c++){
         cout << c << " ";
@@ -56,6 +68,8 @@ for(char ch = 'a'; ch <= 'e'; ch++){
     cout << endl;
 }
 cout << "\n\n";
+
+    cout << "Pattern 7: Hollow Square\n\n" << endl;
 
 for(int i = 1; i <= 8; i++){
     for(int j =1; j<=8;j++){
@@ -71,6 +85,8 @@ for(int i = 1; i <= 8; i++){
 
 cout << "\n\n";
 
+    cout << "Pattern 8: Right-Aligned triangle of astrisks\n\n" << endl;
+
 for(int i = 1; i <= 6; i++){
     for(int j = i; j <=6; j++){
         cout << "* ";
@@ -79,6 +95,8 @@ for(int i = 1; i <= 6; i++){
 }
 
 cout << "\n\n";
+
+    cout << "Pattern 9: Pyramid shape of astrisks\n\n" << endl;
 
     for(int i =1; i<=6; i++){
         for(int j=i; j<=6; j++){
@@ -98,6 +116,8 @@ cout << "\n\n";
 
     cout << "\n\n";
 
+    cout << "Pattern 10: Inverted pyramid shape of astrisks\n\n" << endl;
+
     for(int i = 1; i <= 6; i++){
         for(int j = 1; j <= i; j++){
             cout << " ";
@@ -113,6 +133,8 @@ cout << "\n\n";
 
     cout << "\n\n";
 
+    cout << "Pattern 11: Hollow Inverted half pyramid\n\n" << endl;
+
         for(int i = 1; i <= 6; i++){
         for(int j = 6; j >= 1; j--){
             if(i==1 || j == 6 || i == j){
@@ -124,6 +146,8 @@ cout << "\n\n";
         cout << endl;
     }
     cout << "\n\n";
+
+        cout << "Pattern 12: Hollow ful pyramid\n\n" << endl;
 
     
     for(int i = 1; i <=6; i++){
@@ -148,7 +172,5 @@ cout << "\n\n";
 
         cout << endl;
     }
-
-
-
+return 0;
 }

@@ -3,12 +3,15 @@
 using namespace std;
 
 int main(){
+    
     int choice;
     int reversedNumber = 0, digit_count = 0, product = 1 , last, first, remNum , power;
     int last_digit, first_digit, swapped =0 , palindrome = 0, isStrong = 0, isPerfect = 0, countFirstDigit = 0;
     int num;
     int decision;
+    
     do{
+        
     cout << "Enter a number: ";
     cin >> num;
     int orginalNum = num;
@@ -18,7 +21,7 @@ int main(){
     cin >> choice;
 
     switch(choice){
-
+        
         // Reversing a given number
 
         case 1:
@@ -187,5 +190,7 @@ cout << "\n\n";
 cout << "Do you want to stay in this program(Enter 10 to exit): ";
 cin >> decision;
     }while(decision != 10);
+
+    return 0;
 
 }

@@ -1,9 +1,10 @@
-Probem analysis
+#### Probem analysis
 
-Input: number of row and column
-Process: use for loop operation to do the patterns
-Output : display different types of patterns
+#### Input: number of row and column
+#### Process: use for loop operation to do the patterns
+#### Output : display different types of patterns
 
+##### Pseudocode 
  - Start
 
 - Step 1. Input number of rows and columns

@@ -2,7 +2,7 @@
 ##### Problem analysis :
 Input:
 - Basic salary 
-- Worked hours 
+- Worked hours .
 - Bonus hours
 
 ##### Output:

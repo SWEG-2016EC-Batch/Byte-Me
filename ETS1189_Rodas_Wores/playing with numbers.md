@@ -1,14 +1,14 @@
-- Problem Analysis
+ Problem Analysis
   
-- Input
+ Input
 - Number (num)
 - Choice of operation
 - Decision to continue or exit
  
-- Output
+ Output
 - Result based on the chosen operation (e.g., reversed number, digit count, product of even digits, etc.)
   
-- Operation
+ Operation
 - Reverse a number
 - While num is not zero:
 - Get remainder: rem = num % 10

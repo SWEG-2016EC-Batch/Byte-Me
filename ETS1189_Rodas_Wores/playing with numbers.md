@@ -48,7 +48,7 @@
 - Determine first digit.
 - Count occurrences of the first digit in the original number.
   
-- Pseudo Code
+ Pseudo Code
   
 Step 1: Start
 

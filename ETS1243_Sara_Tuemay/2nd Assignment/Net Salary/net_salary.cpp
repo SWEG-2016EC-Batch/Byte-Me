@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    // declaring varables
     float basicSalary, workedHour, bonusRate, grossSalary, bonus, netSalary,taxRate, tax,overTimeWorkedHour;
     float pensionRate = 0.07, pension;
     char decision;
@@ -10,7 +11,6 @@ int main()
     
     do{
 
-    
         cout << "Enter employees name: ";
         cin >> name;
 
@@ -73,7 +73,7 @@ int main()
         cout << "Worked hour: "<< workedHour << endl;
         cout << "Extra worked hour: "<< overTimeWorkedHour << endl;
         cout << "Bonus payment: "<< bonus << endl;
-        cout << "Net salary: " << netSalary << endl << endl << endl;
+        cout << "Net salary: " << netSalary << "\n\n\n";
       
 
         cout << "Do you want to keep Calculating Employee's Net Salary??";

@@ -1,7 +1,7 @@
 ##### Question 2: Write a program that prompts the capacity in gallons of an automobile fuel tank and the miles per gallons the automobiles can be driven. The program outputs the number miles the automobile cam be driven without refueling.
 So breaking down the problem that has been given into:
 
-##### 1.1 Input:
+##### 1.1 Input:.
 - The capacity of your car fuel tank in gallons.
 - The miles per gallon the automobile can achieve.
 

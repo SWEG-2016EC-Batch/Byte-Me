@@ -1,137 +1,172 @@
-**Probem analysis**
-
-**Input: number of row and column**
-
-**Process: use for loop operation to do the patterns**
-
-**Output : display different types of patterns**
-
- **- Start**
-
-\- Step 1. Input number of rows and columns
-
-   - Prompt the user to input the number of rows (\`row\`) and columns (\`col\`).
-
-\- Step 2. //Pattern 1: Print a grid of numbers
-
-   - For each row from 1 to \`row\`:
-
-     - For each column from 1 to \`col\`:
-
-       - Print the column index.
-
-     - Move to the next line.
-
-\- Then repeat until the outer loop condition is satisfied.
-
-\- Step 3. //Pattern 2: Print letters 'A' to 'X' with line breaks
-
-   - For each character from 'A' to 'X':
-
-     - Print the character.
-
-     - If the character is 'F', 'L', or 'R', move to the next line.
-
-\- Step 4. //Pattern 3: Print a triangle of numbers
-
-   - For each row from 1 to \`row\`:
-
-     - For each column from 1 to the current row number:
-
-       - Print the column index.
-
-     - Move to the next line.
-
-\- repeat until the outer loop condition is satisfied.
-
-\-Step 5. //Pattern 4: Print a right-aligned triangle of numbers
-
-   - For each row from 1 to \`row\`:
-
-     - Print spaces for alignment.
-
-     - Print numbers from 1 to the current row number.
-
-     - Move to the next line.
-
-\- Step 6. //Pattern 5: Print an uppercase letter pyramid
-
-   - For each letter from 'A' to 'E':
-
-     - Print letters from 'A' to the current letter on the outer loop.
-
-     - Move to the next line.
-
-\- then repeat until the outer loop condition is satisfied.
-
-\- Step 7. //Pattern 6: Print a grid of lowercase letters
-
-   - For each row from 'a' to 'e':
-
-     - Print letters from 'a' to 'e'.
-
-     - Move to the next line.
-
-\- repeat until the loop condition is satisfied.
-
-\- Step 8. //Pattern 7: Print a hollow rectangle
-
-   - For each row from 1 to \`row\`:
-
-     - For each column from 1 to \`col\`:
-
-       - Print '\*' if on the border; otherwise, print a space.
-
-     - Move to the next line.
-
-\- Step 9. //Pattern 8: Print an inverted right-aligned triangle of '\*'
-
-   - For each row from 1 to \`row\`:
-
-     - Print '\*' starting from the current row index to \`col\`.
-
-     - Move to the next line.
-
-\- Repeat until the current row index equal to the number of row.
-
-\- Step 10. //Pattern 9: Print a centered pyramid of '\*'
-
-    - For each row from 1 to \`row\`:
-
-      - Print spaces for alignment.
-
-      - Print '\*' to form the pyramid.
-
-      - Move to the next line.
-
-\- Step 11. Pattern 10: Print an inverted centered pyramid of '\*'
-
-    - For each row from 1 to \`row\`:
-
-      - Print leading spaces for alignment.
-
-      - Print '\*' to form the pyramid.
-
-      - Move to the next line.
-
-\- Step 12. Pattern 11: Print a diagonal and border of a square
-
-    - For each row from 1 to \`row\`:
-
-      - For each column from \`col\` to 1:
-
-        - Print '\*' if on the border or diagonal; otherwise, print a space.
-
-      - Move to the next line.
-
-\- Step 13. //Pattern 12: Print an arrow-like pattern
-
-    - For each row from 1 to \`row\`:
-
-      - Print leading spaces for alignment.
-
-      - Print '\*' based on specific conditions.
-
-      - Move to the next line.
-
-\- **Stop**
+Problem Analysis
+
+Input
+- number of rows and columns
+
+Output
+- Various patterns
+- A grid of numbers.
+- Characters from 'A' to 'X'
+- A right-angled triangle of numbers.
+- An inverted right-angled triangle of numbers.
+- A right-angled triangle of letters
+- A grid of lowercase letters from 'a' to 'e'.
+- A hollow square made of asterisks.
+- A right-aligned triangle of asterisks.
+- A pyramid shape made of asterisks.
+- An inverted pyramid shape made of asterisks.
+- A hollow inverted half pyramid
+- A hollow full pyramid
+
+Operation
+
+- Nested loops are used to generate various patterns:
+- Print numbers from 1 to 5 in a grid format.
+- Print characters from 'A' to 'X', inserting line breaks after specific characters ('F', 'L', 'R').
+- Print increasing numbers in a right-angled triangle format.
+- Print decreasing numbers with leading spaces.
+- Print letters from 'A' to 'E' in a pyramid shape.
+- Print lowercase letters from 'a' to 'e' in a grid format.
+- Print a hollow square using asterisks.
+- Print right-aligned triangles using asterisk
+- Print pyramids using asterisks with specific patterns.
+
+Pseudo Code
+
+Step 1: Start 
+Step 2: Generate Patterns
+
+Pattern 1: Grid of Numbers
+
+Step 3: For i from 1 to 5:
+    Step 3.1: For j from 1 to 5:
+        Print j
+        End inner for loop
+    Step 3.2: Print newline
+    En d outer for loop
+
+Pattern 2: Characters 
+
+Step 4: For ch from 'A' to 'X':
+    Print ch
+    If ch == 'F' or ch == 'L' or ch == 'R':
+        Print newline
+        End for loop
+
+Pattern 3: Right-Angled Triangle of Numbers
+
+Step 5: For i from 1 to 5:
+    Step 5.1: For j from 1 to i:
+        Print j
+        End inner for loop
+            Print newline
+    End outer for loop
+
+Pattern 4: Inverted Right-Angled Triangle
+
+Step 6: For i from 1 to 5:
+    Step 6.1: For j from i to 5:
+        Print space
+        End inner for loop
+    Step 6.2: For j from i down to 1:
+        Print j
+        End inner for loop
+         Print newline
+    End outer for loop
+
+Pattern 5: Pyramid of Letters
+
+Step 7: For ch from 'A' to 'E':
+    Step 7.1: For c from 'A' to ch:
+        Print c
+     Print newline
+
+Pattern 6: Lowercase Letters Grid
+
+Step 8: For ch from 'a' to 'e':
+    Step 8.1: For c from 'a' to 'e':
+        Print c
+    Print newline
+
+Pattern 7: Hollow Square
+
+Step 9: For i from 1 to 8:
+    Step 9.1: For j from 1 to 8:
+        If i ==1 or i ==8 or j ==1 or j ==8:
+            Print "*"
+        Else:
+            Print space
+            End inner for loop
+     Print newline
+    End outer for loop
+
+Pattern 8 : Right-Aligned Triangle of Asterisks
+
+Step 10: For i = 1 to 6
+    Step 10.1: For j = i to 6
+        Print "*"
+    End inner for loop
+    Print New Line
+End outer for loop
+
+Pattern 9 : Pyramid Shape of Asterisks
+
+Step 11: For i = 1 to 6
+    Step 11.1: For j = i to 6
+        Print " "  
+    End inner for loop
+    Step 11.2: For j = 1 to i // start another inner loop
+        Print "*"
+    End inner for loop
+    Step 11.3: For j = 1 to i - 1 // start another inner loop
+        Print "*"
+    End inner for loop
+    Print New Line
+End outer loop
+
+Pattern 10 : Inverted Pyramid Shape of Asterisks
+
+Step 12: For i = 1 to 6
+    Step 12.1: For j = 6 downto 1
+        If i = 1 Or j = 6 Or i = j Then
+            Print "*"
+        Else
+            Print " "
+    End inner for loop
+    Print New Line
+End outer for loop
+
+Pattern 11 : Hollow inverted Half pyramid
+
+Step 13: For i = 1 to 6
+    Step 13.1: For j = 6 downto 1
+        If i = 1 Or j = 6 Or i = j Then
+            Print "* " 
+        Else
+            Print "  "
+    End inner for loop
+    Print New Line
+End outer for loop
+
+Pattern 12: Hollow ful pyramid
+
+Step 14: For i = 1 to 6
+- Step 14.1: For j = i to 6
+        Print " " // Print a space
+    End inner for loop
+- Step 14.2: For j = 1 to i // start another inner loop
+        If j = 2 Or (i = 6 And j != 1) Then
+            Print "*"
+        Else
+            Print " " // print space
+        End inner for loop
+- Step 14.3: For j = 1 to i // start another inner loop
+        If j = i Or i = 6 Then
+            Print "*"
+        Else
+            Print " " // print space
+            End inner for loop
+    Print New Line
+End outer for loop
+
+Step 15: Stop

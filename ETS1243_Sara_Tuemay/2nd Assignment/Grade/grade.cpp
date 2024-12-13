@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    // declaring variables
     string name, grade, courseName;
     float test, quiz, project, assignment, finalExam, totalMarks;
     char decision;
@@ -17,12 +18,13 @@ int main()
 
     cout << "Enter the number of course you take this Semester: ";
     cin >> size;
-
+        
+// input validation
     if(cin.fail() || size < 0){
         cout << "Invalid Input\n";
     }
 
-    for(int i = 1; i <= size; i++){
+    for(int i = 1; i <= size; i++){ // to repeat until the counter reaches size
 
         cout << "Enter course name " << i << " : ";
         cin >> courseName;
@@ -110,7 +112,7 @@ int main()
         cout << "Total marks: "<< totalMarks << endl; 
         cout << "Grade: "<< grade << endl << endl;
     } 
-      cout << "Do you want to keep calculating student's result?";
+      cout << "Do you want to keep calculating student's result?" << endl;
       cin >> decision;
     
     }while(decision == 'Y' || decision == 'y');

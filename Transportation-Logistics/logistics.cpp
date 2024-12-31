@@ -61,6 +61,99 @@ int main()
             }
          
     }
+     
+        case 3: { // Private Ride
+            if (privateCounter < privateLimit) {
+                for (int i = premiumLimit + standardLimit; i < totalRides; i++) {
+                    if (logistics[i][0].empty()) {
+                        cout << "Enter your name: ";
+                        cin >> logistics[i][0];
+                        cout << "Enter your pickup location: ";
+                        cin >> logistics[i][1];
+                        cout << "Enter your destination: ";
+                        cin >> logistics[i][2];
+                        logistics[i][3] = "Private";
+                        rideExist[i] = true;
+                        privateCounter++;
+                        
+                        cout << "\nYour Ticket\n";
+                        cout << "\tName: " << logistics[i][0] << "\n";
+                        cout << "\tPickup Location: " << logistics[i][1] << "\n";
+                        cout << "\tDestination: " << logistics[i][2] << "\n";
+                        cout << "\tRide Type: " << logistics[i][3] << "\n";
+                        cout << "\tRide code (car code): " <<rideCodes[i] <<"\n";
+                        break;
+                    }
+                }
+            } else {
+                cout << "No Private rides available. Please try another option.\n";
+            }
+            sleep(5);
+            break;
+        }
+
+        case 4: { // Cancel Ride
+            string name;
+            cout << "Enter your name to cancel the ride: ";
+            cin >> name;
+
+            bool nameFound = false;
+            for (int i = 0; i < totalRides; i++) {
+                if (logistics[i][0] == name) {
+                    string rideType = logistics[i][3];
+                    logistics[i][0].clear();
+                    logistics[i][1].clear();
+                    logistics[i][2].clear();
+                    logistics[i][3].clear();
+
+                    if (rideType == "Premium") premiumCounter--;
+                    else if (rideType == "Standard") standardCounter--;
+                    else if (rideType == "Private") privateCounter--;
+
+                    cout << "\nYour ride has been canceled.\n";
+                    nameFound = true;
+                    break;
+                }
+            }
+            if (!nameFound) {
+                cout << "No booking found under your name.\n";
+            }
+            sleep(5);
+            break;
+        }
+
+        case 5: { // search booking
+            string name;
+            cout << "Enter your name to search booking: ";
+            cin >> name;bool nameFound = false;
+            for (int i = 0; i < totalRides; i++) {
+                if (logistics[i][0] == name) {
+                    cout << "\nYour Ticket\n";
+                    cout << "\tName: " << logistics[i][0] << "\n";
+                    cout << "\tPickup Location: " << logistics[i][1] << "\n";
+                    cout << "\tDestination: " << logistics[i][2] << "\n";
+                    cout << "\tRide Type: " << logistics[i][3] << "\n";
+                    cout << "\tRide code (car code): " <<rideCodes[i] <<"\n";
+                    nameFound = true;
+                    break;
+                }
+            }
+            if (!nameFound) {
+                cout << "No booking found under your name.\n";
+            }
+            sleep(5);
+            break;
+        }
+        case 0: // Exit
+            return 0;
+        default:
+            cout << "Invalid choice. Please try again.\n";
+            sleep(2);
+            break;
+        }
+
+    }
+
 
   return 0;
 }

@@ -218,8 +218,89 @@ case 2: { // Standard Ride
             break;
         }
 
+    } else if(iAm == 'B' || iAm == 'b'){
+        
+    cout << "Reached at destination:press: 1 \n";
+    cout << "Cancel a ride: press 2 \n";
+    cin >> driversChoice;
+    switch (driversChoice)
+    {
+    case 1: // reached at destination 
+       codeFound = false;
+        cout << "Enter your ride code: ";
+        cin >> rideCode;
+        
+        for(int j=0; j < totalRides; j++){
+        if(rideCodes[j] == rideCode)
+        {
+                codeFound = true;
+                string rideType = logistics[j][3];
+                logistics[j][0].clear();
+                logistics[j][1].clear();
+                logistics[j][2].clear();
+                logistics[j][3].clear();
+
+                if (rideType == "Premium")
+                {
+                    premiumCounter--;
+                } 
+                else if (rideType == "Standard")
+                {
+                    standardCounter--;
+                } 
+                else if (rideType == "Private")
+                {
+                     privateCounter--;
+                }
+
+            }
+        }
+        if(!codeFound) {
+            cout << "your code is not found\n";
+        }
+        break;
+
+    case 2:   //  cancel ride
+    codeFound = false;
+        cout << "Enter your ride code: ";
+        cin >> rideCode;
+        j=0;
+        for(j; j < totalRides; j++){
+        if(rideCodes[j] == rideCode)
+        {
+               codeFound = true;
+                string rideType = logistics[j][3];
+                logistics[j][0].clear();
+                logistics[j][1].clear();
+                logistics[j][2].clear();
+                logistics[j][3].clear();
+
+                if (rideType == "Premium")
+                {
+                    premiumCounter--;
+                } 
+                else if (rideType == "Standard")
+                {
+                    standardCounter--;
+                } 
+                else if (rideType == "Private")
+                {
+                     privateCounter--;
+                }
+
+            }
+        }
+        if(!codeFound) {
+            cout << "your code is not found\n";
+        }
+        sleep(5);
+    break;      
+    default:
+    cout << "\nYou have entered a wrong input\n";
+        break;
     }
 
+    }
 
   return 0;
 }

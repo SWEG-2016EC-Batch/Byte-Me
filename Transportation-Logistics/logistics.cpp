@@ -301,6 +301,73 @@ case 2: { // Standard Ride
     }
 
     }
+ else if( iAm == 'C' || iAm == 'c'){ // manager
+        
+    int passWord;
+    cout << "Enter your password: ";
+    cin >> passWord;
+    if(passWord == managerPassword)
+    {
+        cout << "Access granted. Welcome, Manager.\n";
+                cout << "1. Check Vehicle Status\n";
+                cout << "2. View Ride Summary\n";
+                cout << "3. View if rides are occupied\n";
+                cout << "4. To exit the program\n";
+                cout << "Enter your choice: ";
+                int managerChoice;
+                cin >> managerChoice; switch (managerChoice)
+                {
+                case 1: // Check vehicle status
+                    cout << "Vehicle Status:\n";
+                    cout << "Premium Rides Available: " << premiumLimit- premiumCounter << "\n";
+                    cout << "Standard Rides Available: " << standardLimit -standardCounter << "\n";
+                    cout << "Private Rides Available: " << privateLimit- privateCounter << "\n";
+                    sleep(5);
+                    break;
+
+
+         case 2: // View ride summary
+                    cout << "Ride Summary:\n";
+                    cout << "Customer name" << setw(30) << "Ride Type" << setw(30)<< " Ride Code"<< setw(30) << "PickUp Location"<< setw(30) << "Destination\n";
+
+                    for(k=0;k<totalRides;k++){
+                        if(!logistics[k][0].empty()){
+                        cout << logistics[k][0] << setw(30) << logistics[k][3] <<setw(30) << rideCodes[k] << setw(30) << logistics[k][1] << setw(30) << logistics[k][2] << endl;
+            }
+        }
+    sleep(5);
+    break;
+
+    case 3:
+    cout << "Ride Code" << setw(30) << "Ride occupation\n";
+    for(int m =0; m < totalRides; m++){
+        if(!rideExist[m]){
+            occupation = "Un-occupied";
+        } else if(rideExist[m]) {
+            occupation = "Occupied";
+        }
+
+        cout << rideCodes[m] << setw(30) << occupation << endl << endl;
+    }
+    break;
+
+    case 4:
+    return 0;
+    break;
+        default:
+    cout << "You have entered a wrong input\n";
+    sleep(5);
+        break;
+                }
+    
+    }
+    } else{
+        cout << "You have entered a wrong input\n";
+        sleep(5);
+    }
+
+}
+
 
   return 0;
 }

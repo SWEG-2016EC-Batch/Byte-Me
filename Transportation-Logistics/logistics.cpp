@@ -6,33 +6,32 @@ using namespace std;
 
 int main()
 {
-    // Constants for ride limits
-    const int premiumLimit = 17, standardLimit = 23, privateLimit = 10;
-    const int totalRides = 50;
+     // Constants for ride limits
+     const int premiumLimit = 17, standardLimit = 23, privateLimit = 10;
+     const int totalRides = premiumLimit + standardLimit + privateLimit;
 
-    // Ride counters
-    int premiumCounter = 0, standardCounter = 0, privateCounter = 0, driversChoice;
-    int managerPassword = 2345;
+    
+     int premiumCounter = 0, standardCounter = 0, privateCounter = 0;  // Ride counters
+     int driversChoice; // drivers decision
+     const int managerPassword = 2345; 
+     
+    int custNum = 0; // number of customers
+ 
+     string premiumCode = "PRM ", standardCode = "STD ", privateCode = "PRV ", premiumCodes[17], standardCodes[23], privateCodes[10], rideCode; // Ride Code
+     string rideCodes[totalRides]; 
+     bool rideExist[totalRides]={false};
+     string occupation; // for ride occupation
 
-    // Ride Code
-
-    int k=0, j = 0;  
-    string premiumCode = "PRM ", standardCode = "STD ", privateCode = "PRV ", premiumCodes[17], standardCodes[23], privateCodes[10], rideCode;
-    string rideCodes[50]; 
-    bool rideExist[50]={false};
-
-        string occupation; // for ride occupation
-
-
-// code generator
-
-    bool codeFound = false;
-    for(k; k < 50; k++)
-    {
+     // Ride code generator
+     bool codeFound = false;
+     int k=0, j = 0;  
+     for(k; k < totalRides; k++)
+     {
         if(k < premiumLimit)
         {
             rideCodes[k] = premiumCode + to_string(k);
         }
+        
         else if(k < standardLimit + premiumLimit)
         {
             rideCodes[k] = standardCode + to_string(k);
@@ -41,25 +40,41 @@ int main()
             rideCodes[k] = privateCode + to_string(k);
         }
     }
+
+    const int MAX = 10000; // for number of customer to give each customer a unique code
+
+    string TicketCodes[MAX]; 
+    string TicketCode = "TCD " , currentTicketCode;
+
+    for(int n = 0; n < MAX; n++)
+    {
+        TicketCodes[n] = TicketCode + to_string(n);
+
+    }
+
     // Logistics array for booking details
-    string logistics[totalRides][4]; // [Name, Pickup, Destination, RideType,]
+    string logistics[totalRides][5]; // [Name, Pickup, Destination, RideType, Ticket code]
 
     char iAm;
-        while(true)
+
+    while(true)
     {
-    system("clear");
-    cout << "Choose what you are: press: \n";
-    cout  << "A if you are a customer: \n";
-    cout << "B if you are a driver: \n";
-    cout << "C if you are a manager: \n";
-    cin >> iAm;
+        cout << "Derso Mels ride\n";
+        system("clear");
+        cout << "Choose what you are: press: \n";
+        cout  << "A if you are a customer: \n";
+        cout << "B if you are a driver: \n";
+        cout << "C if you are a manager: \n";
+        cin >> iAm;
+
+        if(cin.fail()){
+            cout << "You have entered a wrong input\n";
+            cin.clear();
+            cin.ignore();
+            sleep(3);
+            }
     
-    if(cin.fail()){
-        cout << "You have entered a wrong input\n";
-        sleep(5);
-    }
-    
-    if(iAm == 'A' || iAm == 'a'){
+    if(iAm == 'A' || iAm == 'a'){ // customer
         
         cout << "Which ride do you prefer: ";
         cout << "\n 1. Premium Ride";
@@ -94,22 +109,27 @@ int main()
                         logistics[i][3] = "Premium";
                         rideExist[i] = true;
                         premiumCounter++;
-                        cout << "\n\n      Your Ticket\n";
-                        cout << "          Name: " << logistics[i][0] << "\n";
-                        cout << "          Pickup Location: " << logistics[i][1] << "\n";
-                        cout << "          Destination: " << logistics[i][2] << "\n";
-                        cout << "          Ride Type: " << logistics[i][3] << "\n";
-                        cout << "          Ride code (car code): " << rideCodes[i] <<"\n";
+                        currentTicketCode = TicketCodes[custNum];
+                        logistics[i][4] = currentTicketCode;
+
+
+                        cout << "\n\tYour Ticket\n";
+                        cout << "\tName: " << logistics[i][0] << "\n";
+                        cout << "\tPickup Location: " << logistics[i][1] << "\n";
+                        cout << "\tDestination: " << logistics[i][2] << "\n";
+                        cout << "\tRide Type: " << logistics[i][3] << "\n";
+                        cout << "\tRide code (car code): " << rideCodes[i] <<"\n";
+                        cout << "\tTicket code: " << logistics[i][4] << "\n";
+                        ++custNum;
                         break;
                     }
                 }
             } else {
                 cout << "No Premium rides available. Please try another option.\n";
             }
-            sleep(5);
+            sleep(3);
             break;
         }
-
 
 case 2: { // Standard Ride
             if (standardCounter < standardLimit) {
@@ -124,22 +144,23 @@ case 2: { // Standard Ride
                         logistics[i][3] = "Standard";
                         rideExist[i] = true;
                         standardCounter++;
+                        logistics[i][4] = TicketCodes[custNum];
                          
-
-
-                        cout << "\n\n      Your Ticket\n";
-                        cout << "          Name: " << logistics[i][0] << "\n";
-                        cout << "          Pickup Location: " << logistics[i][1] << "\n";
-                        cout << "          Destination: " << logistics[i][2] << "\n";
-                        cout << "          Ride Type: " << logistics[i][3] << "\n";
-                        cout << "          Ride code (car code): " << rideCodes[i] <<"\n";
+                        cout << "\n\tYour Ticket\n";
+                        cout << "\tName: " << logistics[i][0] << "\n";
+                        cout << "\tPickup Location: " << logistics[i][1] << "\n";
+                        cout << "\tDestination: " << logistics[i][2] << "\n";
+                        cout << "\tRide Type: " << logistics[i][3] << "\n";
+                        cout << "\tRide code (car code): " << rideCodes[i] <<"\n";
+                        cout << "\tTicket code: " << logistics[i][4] << "\n";
+                        ++custNum;
                         break;
                     }
                 }
             } else {
                 cout << "No Standard rides available. Please try another option.\n";
             }
-            sleep(5);
+            sleep(3);
             break;
         }
 
@@ -156,31 +177,38 @@ case 2: { // Standard Ride
                         logistics[i][3] = "Private";
                         rideExist[i] = true;
                         privateCounter++;
+                        logistics[i][4] = TicketCodes[custNum];
                         
-                        cout << "\nYour Ticket\n";
+                        cout << "\n\tYour Ticket\n";
                         cout << "\tName: " << logistics[i][0] << "\n";
                         cout << "\tPickup Location: " << logistics[i][1] << "\n";
                         cout << "\tDestination: " << logistics[i][2] << "\n";
                         cout << "\tRide Type: " << logistics[i][3] << "\n";
                         cout << "\tRide code (car code): " <<rideCodes[i] <<"\n";
+                        cout << "          Ticket code: " << logistics[i][4] << "\n";
+                        ++custNum;
                         break;
                     }
                 }
             } else {
                 cout << "No Private rides available. Please try another option.\n";
             }
-            sleep(5);
+            sleep(3);
             break;
         }
 
-        case 4: { // Cancel Ride
-            string name;
-            cout << "Enter your name to cancel the ride: ";
-            cin >> name;
 
-            bool nameFound = false;
+        case 4: { // Cancel Ride
+        /* changed the name by customer ticket code because many customers can have the same name*/
+            string customerTickedCode;
+            cout << "Enter your your ticket code to cancel the ride: "; 
+            cin.ignore();
+            getline(cin, customerTickedCode);
+
+            bool ticketFound = false;
             for (int i = 0; i < totalRides; i++) {
-                if (logistics[i][0] == name) {
+                if (TicketCodes[i] == customerTickedCode) {
+
                     string rideType = logistics[i][3];
                     logistics[i][0].clear();
                     logistics[i][1].clear();
@@ -192,47 +220,49 @@ case 2: { // Standard Ride
                     else if (rideType == "Private") privateCounter--;
 
                     cout << "\nYour ride has been canceled.\n";
-                    nameFound = true;
+                    ticketFound = true;
                     break;
                 }
             }
-            if (!nameFound) {
+            if (!ticketFound) {
                 cout << "No booking found under your name.\n";
             }
-            sleep(5);
+            sleep(3);
             break;
         }
 
         case 5: { // search booking
-            string name;
-            cout << "Enter your name to search booking: ";
-            cin >> name;
+         /* changed the name by customer ticket code because many customers can have the same name*/
+            string customerTickedCode;
+            cout << "Enter your ticket code to search booking: ";
+            cin.ignore();
+            getline(cin, customerTickedCode);
 
-
-bool nameFound = false;
+           bool ticketFound = false;
             for (int i = 0; i < totalRides; i++) {
-                if (logistics[i][0] == name) {
-                    cout << "\nYour Ticket\n";
+                if (TicketCodes[i] == customerTickedCode) {
+                    cout << "\n\tYour Ticket\n";
                     cout << "\tName: " << logistics[i][0] << "\n";
                     cout << "\tPickup Location: " << logistics[i][1] << "\n";
                     cout << "\tDestination: " << logistics[i][2] << "\n";
                     cout << "\tRide Type: " << logistics[i][3] << "\n";
                     cout << "\tRide code (car code): " <<rideCodes[i] <<"\n";
-                    nameFound = true;
+                    cout << "\tTicket code: " << logistics[i][4] << "\n";
+                    ticketFound = true;
                     break;
                 }
             }
-            if (!nameFound) {
-                cout << "No booking found under your name.\n";
+            if (!ticketFound) {
+                cout << "No booking found under your ticket.\n";
             }
-            sleep(5);
+            sleep(3);
             break;
         }
         case 0: // Exit
             return 0;
         default:
             cout << "Invalid choice. Please try again.\n";
-            sleep(2);
+            sleep(3);
             break;
         }
 
@@ -247,6 +277,12 @@ bool nameFound = false;
        codeFound = false;
         cout << "Enter your ride code: ";
         cin >> rideCode;
+        if(cin.fail()){
+            cin.clear();
+            cin.ignore();
+            cout << "Invalid input. Please enter a valid number.\n";
+            sleep(3);
+        }
         
         for(int j=0; j < totalRides; j++){
         if(rideCodes[j] == rideCode)
@@ -277,6 +313,7 @@ bool nameFound = false;
             cout << "your code is not found\n";
         }
         break;
+
 
     case 2:   //  cancel ride
     codeFound = false;
@@ -311,7 +348,7 @@ bool nameFound = false;
         if(!codeFound) {
             cout << "your code is not found\n";
         }
-        sleep(5);
+        sleep(3);
     break;      
     default:
     cout << "\nYou have entered a wrong input\n";
@@ -334,7 +371,6 @@ bool nameFound = false;
                 int managerChoice;
                 cin >> managerChoice;
 
-
                 switch (managerChoice)
                 {
                 case 1: // Check vehicle status
@@ -342,23 +378,24 @@ bool nameFound = false;
                     cout << "Premium Rides Available: " << premiumLimit- premiumCounter << "\n";
                     cout << "Standard Rides Available: " << standardLimit -standardCounter << "\n";
                     cout << "Private Rides Available: " << privateLimit- privateCounter << "\n";
-                    sleep(5);
+                    cout << "Number of customers who booked using the program: " << custNum << "\n";
+                    sleep(3);
                     break;
 
 
          case 2: // View ride summary
                     cout << "Ride Summary:\n";
-                    cout << "Customer name" << setw(30) << "Ride Type" << setw(30)<< " Ride Code"<< setw(30) << "PickUp Location"<< setw(30) << "Destination\n";
+                    cout << "Customer name" << setw(30) << "Ride Type" << setw(30)<< " Ride Code" << setw(30) << "Ticket Code "<< setw(30) << "PickUp Location"<< setw(30) << "Destination\n";
 
                     for(k=0;k<totalRides;k++){
                         if(!logistics[k][0].empty()){
-                        cout << logistics[k][0] << setw(30) << logistics[k][3] <<setw(30) << rideCodes[k] << setw(30) << logistics[k][1] << setw(30) << logistics[k][2] << endl;
+                        cout << logistics[k][0] << setw(30) << logistics[k][3] <<setw(30) << rideCodes[k] << setw(30) <<logistics[k][4] << setw(30)<< logistics[k][1] << setw(30) << logistics[k][2] << endl;
             }
         }
-    sleep(5);
+    sleep(3);
     break;
 
-    case 3:
+    case 3: // checking occupation of rides
     cout << "Ride Code" << setw(30) << "Ride occupation\n";
     for(int m =0; m < totalRides; m++){
         if(!rideExist[m]){
@@ -376,14 +413,14 @@ bool nameFound = false;
     break;
         default:
     cout << "You have entered a wrong input\n";
-    sleep(5);
+    sleep(3);
         break;
     }
     
     }
     } else{
         cout << "You have entered a wrong input\n";
-        sleep(5);
+        sleep(3);
     }
 
 }

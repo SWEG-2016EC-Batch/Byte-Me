@@ -546,6 +546,13 @@ int main()
         cout << "Reached at destination:press: 1 \n";
         cout << "Cancel a ride: press 2 \n";
         cin >> driversChoice;
+        if (cin.fail()) { 
+            cin.clear();
+            cin.ignore();
+            cout << "Invalid input. Please enter a valid number.\n";
+            sleep(03);
+            continue;
+            }
 
         switch (driversChoice)
         {

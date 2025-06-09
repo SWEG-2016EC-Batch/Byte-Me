@@ -166,7 +166,7 @@ public:
         }
 
         outFile.close(); // Close the file.
-        cout << "\n✅ Schedule saved to file: " << filename << endl;
+        cout << "\n Schedule saved to file: " << filename << endl;
     }
 };
 
@@ -240,7 +240,7 @@ public:
         }
 
         outFile.close(); // Close the file.
-        cout << "\n✅ Timetable saved to file: " << filename << endl;
+        cout << "\n Timetable saved to file: " << filename << endl;
     }
 };
 
